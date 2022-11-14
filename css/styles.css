@@ -904,6 +904,7 @@ b {
 .forma-field:focus-within input {
   border: 1px solid var(--decoration-text-color);
   border-radius: 4px;
+  
 }
 
 .forma-input:not(:placeholder-shown) + .modal-form-field {
@@ -968,7 +969,6 @@ b {
 
 .visually-hidden {
   position: absolute;
-  left: -10000px;
   top: auto;
   width: 1px;
   height: 1px;
@@ -998,6 +998,13 @@ b {
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.modal-form-field.chek:focus .icon ,
+.modal-form-field.chek:hover .icon ,
+.modal-form-field.chek:focus-within .icon {
+  /* fill: var(--primary-body-color); */
+  background-color:var(--decoration-text-color); 
 }
 
 .modal-form-field.chek .icon {
