@@ -753,7 +753,6 @@ ul.list {
 .form-footer {
   display: inline-flex;
   flex-direction: column;
-
   margin-right: 94px;
   max-height: 86px;
 }
@@ -977,7 +976,7 @@ b {
 }
 
 .footer-input {
-  width: 100%;
+  min-width: 258px;
   height: 50px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
