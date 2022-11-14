@@ -904,7 +904,6 @@ b {
 .forma-field:focus-within input {
   border: 1px solid var(--decoration-text-color);
   border-radius: 4px;
-  
 }
 
 .forma-input:not(:placeholder-shown) + .modal-form-field {
@@ -994,24 +993,39 @@ b {
 
 .modal-form-field.chek {
   width: 100%;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
 }
 
-.modal-form-field.chek:focus .icon ,
-.modal-form-field.chek:hover .icon ,
-.modal-form-field.chek:focus-within .icon {
-  /* fill: var(--primary-body-color); */
-  background-color:var(--decoration-text-color); 
+.modal-tick .icon {
+  width: 16px;
+  height: 15px;
+  border: 0.2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  fill: transparent;
+}
+
+.modal-tick:checked .icon,
+.modal-tick:hover .icon,
+.modal-tick:focus-within .icon {
+  fill: rgba(255, 255, 255, 1);
+  background-color: var(--decoration-text-color);
 }
 
 .modal-form-field.chek .icon {
-  top: 0;
-  left: 0;
+  margin-right: 4px;
   align-items: center;
   justify-content: center;
+  transform: translateY(-50%);
+}
+
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: transparent;
+  fill: #ffffff;
 }
 
 .accept-decor {
@@ -1025,23 +1039,4 @@ b {
   position: absolute;
   top: 10%;
   right: 200px;
-}
-
-.modal-form-field.chek > .tick {
-  width: 16px;
-  height: 16px;
-  text-align: center;
-  justify-content: center;
-}
-
-.chek .tick {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #303030;
-  border-radius: 3px;
-  margin-right: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
 }
