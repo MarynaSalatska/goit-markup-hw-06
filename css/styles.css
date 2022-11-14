@@ -1014,6 +1014,8 @@ b {
 .modal-form-field.chek:focus-within .icon {
   fill: rgba(255, 255, 255, 1);
   background-color: var(--decoration-text-color);
+  border: var(--decoration-text-color);
+  border-radius: 2px;
 }
 
 .modal-form-field.chek .icon {
