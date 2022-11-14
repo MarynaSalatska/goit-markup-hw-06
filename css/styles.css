@@ -1008,9 +1008,10 @@ b {
   fill: transparent;
 }
 
-.modal-tick:checked .icon,
-.modal-tick:hover .icon,
-.modal-tick:focus-within .icon {
+.modal-form-field.chek:checked .icon,
+.modal-form-field.chek:hover .icon,
+.modal-form-field.chek:focus .icon,
+.modal-form-field.chek:focus-within .icon {
   fill: rgba(255, 255, 255, 1);
   background-color: var(--decoration-text-color);
 }
@@ -1020,12 +1021,6 @@ b {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-}
-
-.input-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border: transparent;
-  fill: #ffffff;
 }
 
 .accept-decor {
