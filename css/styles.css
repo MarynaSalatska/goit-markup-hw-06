@@ -825,6 +825,12 @@ textarea {
   border-radius: 4px;
 }
 
+input {
+  min-height: 40px;
+}
+textarea {
+  max-height: 120px;
+}
 input:hover,
 input:focus,
 textarea:hover,
@@ -975,7 +981,7 @@ b {
 }
 
 .footer-input {
-  min-width: 258px;
+  min-width: 358px;
   height: 50px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1008,10 +1014,11 @@ b {
   fill: transparent;
 }
 
-.modal-form-field.chek:checked .icon,
-.modal-form-field.chek:hover .icon,
-.modal-form-field.chek:focus .icon,
-.modal-form-field.chek:focus-within .icon {
+.forma-input + .modal-tick .icon {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.forma-input:checked + .modal-tick .icon {
   fill: rgba(255, 255, 255, 1);
   background-color: var(--decoration-text-color);
   border: var(--decoration-text-color);
